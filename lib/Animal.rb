@@ -16,8 +16,8 @@ class Animal
         @@all 
     end 
 
-    def find_by_species(species)
-        @@all.select{|animal| animal.species == self}
+    def self.find_by_species(species)
+        @@all.select{|animal| animal.species == species}
     end 
     
 

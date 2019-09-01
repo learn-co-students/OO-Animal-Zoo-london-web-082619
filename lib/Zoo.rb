@@ -29,7 +29,7 @@ def animal_nickname
     animals.map{|animal| animal.nickname}
 end 
 
-def find_by_location(location)
+def self.find_by_location(location)
     @@all.select{|zoo| zoo.location == location}
 end 
 
