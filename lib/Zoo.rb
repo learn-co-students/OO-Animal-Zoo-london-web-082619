@@ -21,11 +21,11 @@ attr_reader :name, :location
    
    # will return an array of species in the zoo
     def animal_species(species)
-       self.animals.map{|animal| animal.species }.uniq
+       animals.map{|animal| animal.species }.uniq
     end
  #species what are we iterating over ?? return an array of particular species
     def find_by_species(species)
-        self.all.select{|animal|animal.species == species}
+        animals.select{|animal|animal.species == species}
     end
 #return an array of nicknames use map
     def animal_nicknames 
